@@ -48,6 +48,6 @@
         <PackageReference Include="Soenneker.Kiota.BearerAuthenticationProvider" Version="4.0.27" />
         <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.3" />
         <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.754" />
-        <PackageReference Include="Soenneker.Utils.HttpClientCache" Version="4.0.1874" />
+        <PackageReference Include="Soenneker.Utils.HttpClientCache" Version="4.0.1875" />
     </ItemGroup>
 </Project>
