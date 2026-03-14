@@ -49,7 +49,7 @@
         <PackageReference Include="Soenneker.Extensions.Configuration" Version="4.0.806" />
         <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.22" />
         <PackageReference Include="Soenneker.Kiota.BearerAuthenticationProvider" Version="4.0.31" />
-        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.15" />
+        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.17" />
         <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.771" />
         <PackageReference Include="Soenneker.Utils.HttpClientCache" Version="4.0.1913" />
     </ItemGroup>
