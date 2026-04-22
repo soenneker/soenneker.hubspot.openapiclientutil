@@ -1,20 +1,19 @@
 using Soenneker.HubSpot.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.HubSpot.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class HubSpotOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class HubSpotOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IHubSpotOpenApiClientUtil _openapiclientutil;
 
-    public HubSpotOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public HubSpotOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IHubSpotOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
