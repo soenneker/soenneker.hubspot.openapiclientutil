@@ -10,5 +10,10 @@ namespace Soenneker.HubSpot.OpenApiClientUtil.Abstract;
 /// </summary>
 public interface IHubSpotOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
+    /// <summary>
+    /// Gets the value.
+    /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>A task containing the result of the operation.</returns>
     ValueTask<HubSpotOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
