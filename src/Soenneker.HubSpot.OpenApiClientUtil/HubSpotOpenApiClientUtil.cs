@@ -30,7 +30,7 @@ public sealed class HubSpotOpenApiClientUtil : IHubSpotOpenApiClientUtil
 
     private async ValueTask<HubSpotOpenApiClient> CreateClient(string accessToken, CancellationToken token)
     {
-        HttpClient httpClient = await _httpClientUtil.Get(token).NoSync();
+        HttpClient httpClient = await _httpClientUtil.Get(accessToken, token).NoSync();
 
         var requestAdapter = new HttpClientRequestAdapter(new BearerAuthenticationProvider(accessToken), httpClient: httpClient);
 
