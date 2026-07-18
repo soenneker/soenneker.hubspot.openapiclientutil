@@ -47,6 +47,6 @@
         <PackageReference Include="Soenneker.Dictionaries.Singletons" Version="4.0.61" />
         <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.88" />
         <PackageReference Include="Soenneker.Kiota.BearerAuthenticationProvider" Version="4.0.43" />
-        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.103" />
+        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.104" />
     </ItemGroup>
 </Project>
