@@ -46,6 +46,6 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.107" />
         <PackageReference Include="Soenneker.Kiota.BearerAuthenticationProvider" Version="4.0.44" />
-        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.106" />
+        <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.107" />
     </ItemGroup>
 </Project>
