@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Description>An async thread-safe singleton for the HubSpot OpenApiClient</Description>
+        <Description>Provides cached HubSpot generated clients for one or more private app access tokens</Description>
         <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.HubSpot.OpenApiClientUtil</AssemblyName>
@@ -45,7 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.133" />
-        <PackageReference Include="Soenneker.Kiota.BearerAuthenticationProvider" Version="4.0.46" />
         <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.120" />
     </ItemGroup>
 </Project>

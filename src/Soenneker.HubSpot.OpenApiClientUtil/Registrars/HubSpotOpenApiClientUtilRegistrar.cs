@@ -6,7 +6,7 @@ using Soenneker.HubSpot.OpenApiClientUtil.Abstract;
 namespace Soenneker.HubSpot.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// A .NET thread-safe singleton HttpClient for GitHub
+/// Registers the cached HubSpot generated-client provider.
 /// </summary>
 public static class HubSpotOpenApiClientUtilRegistrar
 {
@@ -26,7 +26,7 @@ public static class HubSpotOpenApiClientUtilRegistrar
     /// </summary>
     public static IServiceCollection AddHubSpotOpenApiClientUtilAsScoped(this IServiceCollection services)
     {
-        services.AddHubSpotClientUtilAsScoped()
+        services.AddHubSpotClientUtilAsSingleton()
                 .TryAddScoped<IHubSpotOpenApiClientUtil, HubSpotOpenApiClientUtil>();
 
         return services;

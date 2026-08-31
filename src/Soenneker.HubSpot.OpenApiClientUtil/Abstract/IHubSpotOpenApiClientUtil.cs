@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 namespace Soenneker.HubSpot.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// A .NET thread-safe singleton HttpClient for 
+/// Provides cached HubSpot generated clients for one or more private app access tokens.
 /// </summary>
 public interface IHubSpotOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets a client authenticated with the configured <c>HubSpot:Token</c>.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>A task containing the configured client.</returns>
     ValueTask<HubSpotOpenApiClient> Get(CancellationToken cancellationToken = default);
 
     /// <summary>
