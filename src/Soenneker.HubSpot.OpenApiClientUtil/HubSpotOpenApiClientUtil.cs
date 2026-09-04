@@ -14,6 +14,7 @@ using Soenneker.HubSpot.OpenApiClientUtil.Abstract;
 
 namespace Soenneker.HubSpot.OpenApiClientUtil;
 
+/// <inheritdoc cref="IHubSpotOpenApiClientUtil" />
 public sealed class HubSpotOpenApiClientUtil : IHubSpotOpenApiClientUtil
 {
     private readonly SingletonDictionary<HubSpotOpenApiClient> _clients;
