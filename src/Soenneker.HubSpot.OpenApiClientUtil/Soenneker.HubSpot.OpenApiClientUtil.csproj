@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.146" />
+        <PackageReference Include="Soenneker.HubSpot.Client" Version="4.0.147" />
         <PackageReference Include="Soenneker.HubSpot.OpenApiClient" Version="4.0.125" />
     </ItemGroup>
 </Project>
