@@ -39,7 +39,7 @@ public sealed class HubSpotOpenApiClientUtil : IHubSpotOpenApiClientUtil
 
     public ValueTask<HubSpotOpenApiClient> Get(CancellationToken cancellationToken = default)
     {
-        var accessToken = _configuration.GetValueStrict<string>("HubSpot:Token");
+        var accessToken = _configuration.GetStringStrict("HubSpot:Token");
 
         return Get(accessToken, cancellationToken);
     }
